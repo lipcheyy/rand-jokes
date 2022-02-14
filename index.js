@@ -1,4 +1,3 @@
-console.log("jyjy")
 const btn=document.querySelector(".btn")
 const jokes=document.querySelector('.jokes')
 body=document.querySelector('.body')
@@ -11,7 +10,6 @@ async function jokeGenerator(){
             return res.json()
         })
         .then(data =>{
-            console.log(data.value.joke);
             jokes.innerHTML = data.value.joke;
         })
         img.classList.toggle("shake-img")
